@@ -73,9 +73,7 @@ const MusicPlayer = () => {
 					min="0"
 					max={duration}
 					onInput={event => {
-            dispatch(playPause(false))
 						setSeekTime(event.target.value);
-            setTimeout(() => {dispatch(playPause(true))}, 1000);
 					}}
 					setSeekTime={setSeekTime}
 					appTime={appTime}
