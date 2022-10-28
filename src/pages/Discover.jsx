@@ -7,9 +7,9 @@ const Discover = () => {
 	console.log(data);
 	const genreTitle = 'Pop';
 
-	if (isFetching) return <Loader title="Loading songs..." />;
+	if (isFetching) return <Loader title="Loading songs..." />; //работает
 
-	error && <Error />;
+	if(error) return <Error />;
 
 	return (
 		<div className="flex flex-col">

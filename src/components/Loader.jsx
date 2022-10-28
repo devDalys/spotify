@@ -1,3 +1,4 @@
+import * as React from 'react'
 import { loader } from '../assets';
 
 export const Loader = ({ title }) => (
