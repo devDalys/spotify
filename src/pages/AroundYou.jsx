@@ -9,7 +9,6 @@ const CountryTracks = () => {
 	const [loading, setLoading] = React.useState(true);
 	const { activeSong, isPlaying } = useSelector(state => state.player);
 	const { data, isError, isFetching } = useGetSongsByCountyQuery(country, { skip: !country.length });
-	console.log(country);
 
 	if (isFetching && loading) return <Loader title="Loading songs around you" />;
 	if (isError) return <Error />;

@@ -13,6 +13,7 @@ const Sidebar = () => {
 				<NavLink
 					key={item.name}
 					to={item.to}
+					end={item.end}
 					className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400 hover:text-cyan-400"
 					onClick={() => handleClick && handleClick()}
 				>
