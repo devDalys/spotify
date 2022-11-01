@@ -31,9 +31,15 @@ const Sidebar = () => {
 			</div>
 			<div className="absolute md:hidden block top-6 right-3">
 				{mobileMenuOpen ? (
-					<RiCloseLine className="w-6 h-6 text-white mr-2 z-10" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}/>
+					<RiCloseLine
+						className="w-6 h-6 text-white mr-2 z-10"
+						onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+					/>
 				) : (
-					<HiOutlineMenu className="w-6 h-6 text-white mr-2 z-10" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}/>
+					<HiOutlineMenu
+						className="w-6 h-6 text-white mr-2 z-10"
+						onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+					/>
 				)}
 			</div>
 			<div
@@ -42,7 +48,7 @@ const Sidebar = () => {
 				}`}
 			>
 				<img src={logo} alt="logo" className="w-full h-14 object-contain" />
-				<NavLinks onClick = {() => setMobileMenuOpen(!mobileMenuOpen)}/>
+				<NavLinks onClick={() => setMobileMenuOpen(!mobileMenuOpen)} />
 			</div>
 		</>
 	);
